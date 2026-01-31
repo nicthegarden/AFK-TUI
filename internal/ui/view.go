@@ -620,7 +620,7 @@ func renderSkillsWithHotkeys(m *engine.Model, height int) string {
 	lines = append(lines, lipgloss.NewStyle().
 		Background(lipgloss.Color("#333333")).
 		Foreground(colorInfo).
-		Render("  [letter] Select  [↑/↓] Navigate  [Enter] View  [d] Dashboard  "))
+		Render("  [1-9] Select  [↑/↓] Navigate  [Enter] View  [Esc/q] Back  "))
 
 	return boxStyle.
 		Height(height).
@@ -671,7 +671,7 @@ func renderCategorySelectionWithHotkeys(m *engine.Model, height int) string {
 	lines = append(lines, lipgloss.NewStyle().
 		Background(lipgloss.Color("#333333")).
 		Foreground(colorInfo).
-		Render("  [letter] Select  [↑/↓] Navigate  [Enter] Confirm  [s] Skills  [Esc] Back  "))
+		Render("  [1-9] Select  [↑/↓] Navigate  [Enter] Confirm  [Esc/q] Back  "))
 
 	return boxStyle.
 		Height(height).
@@ -743,7 +743,7 @@ func renderActivitySelectionWithHotkeys(m *engine.Model, height int) string {
 	lines = append(lines, lipgloss.NewStyle().
 		Background(lipgloss.Color("#333333")).
 		Foreground(colorInfo).
-		Render("  [letter] Start  [↑/↓] Navigate  [Enter] Start  [s] Skills  [Esc] Back  "))
+		Render("  [1-9/letter] Start  [↑/↓] Navigate  [Enter] Start  [Esc/q] Back  "))
 
 	return boxStyle.
 		Height(height).
@@ -861,7 +861,7 @@ func renderInventory(m *engine.Model, height int) string {
 		lines = append(lines, lipgloss.NewStyle().
 			Background(lipgloss.Color("#333333")).
 			Foreground(colorInfo).
-			Render("  [#] Quick sell  [s] Sell mode  [Esc] Dashboard  "))
+			Render("  [#] Quick sell  [v] Sell/Vend  [Esc/q] Back  "))
 	}
 
 	return boxStyle.
@@ -1016,7 +1016,7 @@ func renderTraining(m *engine.Model, height int) string {
 	lines = append(lines, lipgloss.NewStyle().
 		Background(lipgloss.Color("#333333")).
 		Foreground(colorInfo).
-		Render("  [letter] Start  [↑/↓] Navigate  [Enter] Start  [Esc/s] Back  "))
+		Render("  [letter] Start  [↑/↓] Navigate  [Enter] Start  [Esc/q] Back  "))
 
 	return boxStyle.
 		Height(height).
@@ -1161,7 +1161,7 @@ func renderSlayerTierSelection(m *engine.Model, height int) string {
 	lines = append(lines, lipgloss.NewStyle().
 		Background(lipgloss.Color("#333333")).
 		Foreground(colorInfo).
-		Render("  [1-5] Select  [↑/↓] Navigate  [Enter] Confirm  [Esc/c] Back  "))
+		Render("  [1-5] Select  [↑/↓] Navigate  [Enter] Confirm  [Esc/q] Back  "))
 
 	return boxStyle.
 		Height(height).
@@ -1212,7 +1212,7 @@ func renderSlayerMonsterSelection(m *engine.Model, height int) string {
 	lines = append(lines, lipgloss.NewStyle().
 		Background(lipgloss.Color("#333333")).
 		Foreground(colorInfo).
-		Render("  [letter] Fight  [↑/↓] Navigate  [Enter] Fight  [Esc] Back  "))
+		Render("  [letter] Fight  [↑/↓] Navigate  [Enter] Fight  [Esc/q] Back  "))
 
 	return boxStyle.
 		Height(height).
