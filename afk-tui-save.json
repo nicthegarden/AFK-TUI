@@ -1,0 +1,232 @@
+{
+  "name": "Adventurer",
+  "created_at": "2026-01-30T22:01:04.4067436-05:00",
+  "last_online": "2026-01-30T23:32:33.00082359-05:00",
+  "total_playtime": 0,
+  "skills": {
+    "agility": {
+      "type": "agility",
+      "level": 1,
+      "xp": 0,
+      "xp_to_next": 100,
+      "total_processed": 0
+    },
+    "combat": {
+      "type": "combat",
+      "level": 1,
+      "xp": 0,
+      "xp_to_next": 100,
+      "total_processed": 0
+    },
+    "cooking": {
+      "type": "cooking",
+      "level": 1,
+      "xp": 0,
+      "xp_to_next": 100,
+      "total_processed": 0
+    },
+    "crafting": {
+      "type": "crafting",
+      "level": 1,
+      "xp": 0,
+      "xp_to_next": 100,
+      "total_processed": 0
+    },
+    "fishing": {
+      "type": "fishing",
+      "level": 1,
+      "xp": 0,
+      "xp_to_next": 100,
+      "total_processed": 0
+    },
+    "mining": {
+      "type": "mining",
+      "level": 11,
+      "xp": 365,
+      "xp_to_next": 404,
+      "total_processed": 7
+    },
+    "recycling": {
+      "type": "recycling",
+      "level": 9,
+      "xp": 6,
+      "xp_to_next": 305,
+      "total_processed": 86
+    },
+    "smithing": {
+      "type": "smithing",
+      "level": 1,
+      "xp": 0,
+      "xp_to_next": 100,
+      "total_processed": 0
+    },
+    "thieving": {
+      "type": "thieving",
+      "level": 1,
+      "xp": 0,
+      "xp_to_next": 100,
+      "total_processed": 0
+    },
+    "woodcutting": {
+      "type": "woodcutting",
+      "level": 26,
+      "xp": 2529,
+      "xp_to_next": 3291,
+      "total_processed": 958
+    }
+  },
+  "inventory": {
+    "items": [
+      {
+        "id": "bronze_axe",
+        "name": "Bronze Axe",
+        "description": "Basic woodcutting tool",
+        "type": "tool",
+        "quantity": 1,
+        "value": 50,
+        "requirements": {
+          "woodcutting": 1
+        },
+        "slot": "weapon",
+        "tool_power": 1,
+        "recycle_value": {
+          "copper_fragments": 2,
+          "metal_fragments": 3
+        }
+      },
+      {
+        "id": "bronze_pickaxe",
+        "name": "Bronze Pickaxe",
+        "description": "Basic mining tool",
+        "type": "tool",
+        "quantity": 1,
+        "value": 50,
+        "requirements": {
+          "mining": 1
+        },
+        "slot": "weapon",
+        "tool_power": 1,
+        "recycle_value": {
+          "copper_fragments": 2,
+          "metal_fragments": 3
+        }
+      },
+      {
+        "id": "wood_fragments",
+        "name": "Wood Fragments",
+        "description": "Tiny pieces of wood from recycling",
+        "type": "material",
+        "quantity": 86,
+        "value": 1
+      },
+      {
+        "id": "logs",
+        "name": "Logs",
+        "description": "Basic wood from any tree",
+        "type": "resource",
+        "quantity": 1561,
+        "value": 5,
+        "recycle_value": {
+          "wood_fragments": 1
+        }
+      },
+      {
+        "id": "copper_ore",
+        "name": "Copper Ore",
+        "description": "Common copper ore",
+        "type": "resource",
+        "quantity": 97,
+        "value": 8,
+        "recycle_value": {
+          "metal_fragments": 1
+        }
+      }
+    ],
+    "max_slots": 28
+  },
+  "equipment": {},
+  "unlocked_perks": [
+    {
+      "id": "wc_speed_1",
+      "name": "Quick Chop",
+      "description": "10% faster woodcutting",
+      "skill_type": "woodcutting",
+      "level_req": 5,
+      "effect": "speed_boost",
+      "value": 0.1
+    },
+    {
+      "id": "wc_xp_1",
+      "name": "Nature's Wisdom",
+      "description": "15% more Woodcutting XP",
+      "skill_type": "woodcutting",
+      "level_req": 10,
+      "effect": "xp_boost",
+      "value": 0.15
+    },
+    {
+      "id": "wc_double",
+      "name": "Double Logs",
+      "description": "5% chance for double logs",
+      "skill_type": "woodcutting",
+      "level_req": 20,
+      "effect": "double_drop",
+      "value": 0.05
+    },
+    {
+      "id": "mining_speed_1",
+      "name": "Swift Pick",
+      "description": "10% faster mining",
+      "skill_type": "mining",
+      "level_req": 5,
+      "effect": "speed_boost",
+      "value": 0.1
+    },
+    {
+      "id": "mining_xp_1",
+      "name": "Rock Sense",
+      "description": "15% more Mining XP",
+      "skill_type": "mining",
+      "level_req": 10,
+      "effect": "xp_boost",
+      "value": 0.15
+    }
+  ],
+  "current_activity": {
+    "id": "mine_copper",
+    "name": "Mine Copper",
+    "description": "Mine copper ore",
+    "type": "gathering",
+    "skill_type": "mining",
+    "required_level": 1,
+    "base_ticks": 5,
+    "base_xp": 12,
+    "output_items": {
+      "copper_ore": 1
+    },
+    "progress": 0.548,
+    "ticks_remaining": 1
+  },
+  "gold": 0,
+  "combat_stats": {
+    "strength": 1,
+    "dexterity": 0,
+    "defense": 0,
+    "constitution": 0,
+    "intelligence": 0,
+    "hitpoints": 100,
+    "max_hitpoints": 100,
+    "attack": 1,
+    "ranged": 1,
+    "magic": 1,
+    "slayer_level": 0,
+    "slayer_xp": 0,
+    "slayer_points": 0
+  },
+  "attributes": null,
+  "activity_log": {
+    "entries": [],
+    "max_entries": 0,
+    "scroll_pos": 0
+  }
+}
